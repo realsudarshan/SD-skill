@@ -77,14 +77,6 @@ export function SkillsSearch({ multiSelect }: SkillsSearchProps) {
     return `npx skills add ${skill.source || skill.id}`;
   };
 
-  const getSelectionItem = (skill: SkillsShSkill) => {
-    return {
-      title: skill.name,
-      command: getInstallUrl(skill),
-      id: skill.id
-    };
-  };
-
   const copyInstallCommand = async (skill: SkillsShSkill) => {
     await navigator.clipboard.writeText(getInstallUrl(skill));
     setCopiedSkillId(skill.id);
@@ -95,11 +87,10 @@ export function SkillsSearch({ multiSelect }: SkillsSearchProps) {
     event.preventDefault();
     event.stopPropagation();
     if (multiSelect) {
-      const selectionItem = getSelectionItem(skill);
       // Use skill ID as the selection key to ensure uniqueness
       multiSelect.toggle({
-        title: selectionItem.title,
-        command: selectionItem.command,
+        title: skill.name,
+        command: getInstallUrl(skill),
         id: skill.id
       });
     }
@@ -149,7 +140,6 @@ export function SkillsSearch({ multiSelect }: SkillsSearchProps) {
           ) : (
             <div className="results-grid">
               {results.map((skill) => {
-                const selectionItem = getSelectionItem(skill);
                 const isSelected = multiSelect?.active && !!multiSelect.selected[skill.id];
                 
                 return (
