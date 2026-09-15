@@ -1,0 +1,17 @@
+all/design-taste-frontend
+all/redesign-existing-projects
+all/image-taste-frontend
+all/gpt-taste
+all/industrial-brutalist-ui
+all/minimalist-ui
+all/high-end-visual-design
+all/stitch-design-taste
+all/full-output-enforcement
+all/autoresearch
+all/idea-launcher
+all/minimum-viable-parser
+all/skills-update
+all/imessage-handoff
+all/x-publisher
+all/find-skills
+all/gemini-api-dev

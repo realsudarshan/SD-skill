@@ -1,0 +1,18 @@
+# Lightweight Quickstart
+
+Small starter pack for a fresh Codex setup.
+
+Paste into your agent:
+
+```text
+$skill-starter install https://github.com/realsudarshan/SD-skill/tree/main/categories/lightweight-quickstart
+```
+
+## Skills
+
+| Skill | Why |
+| --- | --- |
+| `frontend-skill` | Strong UI defaults. |
+| `design-taste-frontend` | Better product design judgment. |
+| `full-output-enforcement` | Complete code and artifacts. |
+| `playwright` | Browser testing and verification. |

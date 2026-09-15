@@ -1,0 +1,6 @@
+favourites/imessage-handoff
+favourites/x-publisher
+favourites/autoresearch
+favourites/idea-launcher
+favourites/minimum-viable-parser
+favourites/skills-update
